@@ -1,3 +1,84 @@
+body, html { 
+	width: 100%;
+	height: 100%;
+/*	font-family: 'Cormorant Garamond',sans-serif;*/
+	font-family: 'Playfair Display', sans-serif;
+	background: url("images_and_ref/background.jpeg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#title{
+	text-align: center;
+	padding: 50px 0px 0px 0px;
+}
+
+/*fix position of footer*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+/*header design*/
 .nav-link{
 	background-color: lightblue;
+	opacity: 1;
+}
+.nav-item{
+	font-weight: bold;
+	padding-top: 30px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+
+}
+
+div.sticky{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  position: fixed;
+  top: 0;
+}
+
+hr{
+	border: 2px solid black;
+	opacity: .5;
+}
+
+/*footer design*/
+.navbar {
+	margin-top: 25px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 25%;
+  background-color: grey;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
