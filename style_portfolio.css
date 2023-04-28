@@ -1,0 +1,8 @@
+.text{
+	text-align: center;
+}
+
+ul.my_list{
+	display: inline-block;
+	text-align: left;
+}
