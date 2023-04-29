@@ -1,8 +1,14 @@
 .text{
 	text-align: center;
 }
-
+#sub_title{
+	margin: 0px 0px 25px 0px
+}
 ul.my_list{
 	display: inline-block;
 	text-align: left;
+}
+
+.center {
+	padding: 250px 0;
 }

@@ -6,3 +6,7 @@ ul.my_list{
 	display: inline-block;
 	text-align: left;
 }
+
+.center {
+	padding: 250px 0;
+}
