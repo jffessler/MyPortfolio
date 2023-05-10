@@ -1,145 +1,262 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+    />
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	<link rel="stylesheet" type="text/css" href="style_all.css">
-	<link rel="stylesheet" type="text/css" href="style_index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style_all.css" />
+    <link rel="stylesheet" type="text/css" href="style_index.css" />
 
-	<title>John Fessler</title>
-</head>
-	
-<body>
-	<div id="page-container">
-		<div id="content-wrap">
-			<div class="sticky">
-				<ul class="nav nav-pills">
-					<li class="nav-item">
-				    	<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-				    	<a class="nav-link" href="Portfolio.html">Portfolio</a>
-					</li>
-					<li class="nav-item">
-				    	<a class="nav-link" href="Math.html">Math Art</a>
-					</li>
-					<li class="nav-item">
-				    	<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
+    <title>John Fessler</title>
+  </head>
 
-			<div id="title">
-				<h1><strong>John Fessler</strong></h1>
-				<h2><strong>My Journey</strong></h2><br>
-			</div>
+  <body>
+    <div id="page-container">
+      <div id="content-wrap">
+        <div class="sticky">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Math.html">Math Art</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-			<div class="body_text container">
-				<div class="row">
-					<div class="col-lg-3">
-						<img id="headshot" src="images_and_ref/mockheadshot.jpg" width="300" height="388">
-						<h3 id="resume_title"><strong>My Resumé</strong></h3>
-						<img id="resume" src="images_and_ref/resume.jpeg" width="300" height="388">
+        <div id="title">
+          <h1><strong>John Fessler</strong></h1>
+          <h2><strong>Cloud Developer and Python Engineer</strong></h2>
+          <br />
+        </div>
 
-						<div id="window" class="modal">
-							<div class="modal-content">
-						    	<span class="close">&times;</span>
-						    	<iframe src="images_and_ref/resume.pdf" width=100% height=100%></iframe>
-							</div>
-						</div>
-						<script>
-							var modal = document.getElementById("window");
-							var btn = document.getElementById("resume");
-							var span = document.getElementsByClassName("close")[0];
-							//open the modal
-							btn.onclick = function() {
-								modal.style.display = "block";
-							}
-							//close the modal
-							span.onclick = function() {
-								modal.style.display = "none";
-							}
-							// click outside closes window
-							window.onclick = function(event) {
-							  if (event.target == modal) {
-									modal.style.display = "none";
-								}
-							}
-						</script>
-					</div>
-					<div class="col-lg-6">
-						<h3>Professional Summary</h3>
-						<p>I am a hard-working and multi-talented professional with strong skills tied with natural sciences, computer science, and team leadership. With years of work and educational experience honing my abilities, I have input for: AWS cloud development, native species research, public health protection, environmental restoration, data input, and multiple coding languages including: Python, Matlab, SQL, and C++.</p>
+        <div class="body_text container">
+          <div class="row">
+            <div class="col-lg-3">
+              <img
+                id="headshot"
+                src="images_and_ref/headshot.jpeg"
+                width="300"
+                height="388"
+              />
+              <h3 id="resume_title"><strong>My Resumé</strong></h3>
+              <img
+                id="resume"
+                src="images_and_ref/resume.jpeg"
+                width="300"
+                height="388"
+              />
 
-						<h3>Born and raise in the Bay Area!</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div id="window" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <iframe
+                    src="images_and_ref/resume.pdf"
+                    width="100%"
+                    height="100%"
+                  ></iframe>
+                </div>
+              </div>
+              <script>
+                var modal = document.getElementById("window");
+                var btn = document.getElementById("resume");
+                var span = document.getElementsByClassName("close")[0];
+                //open the modal
+                btn.onclick = function () {
+                  modal.style.display = "block";
+                };
+                //close the modal
+                span.onclick = function () {
+                  modal.style.display = "none";
+                };
+                // click outside closes window
+                window.onclick = function (event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                };
+              </script>
+            </div>
+            <div class="col-lg-6">
+              <h3>Professional Summary</h3>
+              <p>
+                I am a hard-working and multi-talented professional with strong
+                skills tied with natural sciences, computer science, and team
+                leadership. With years of work and educational experience honing
+                my abilities, I have input for: AWS cloud development, native
+                species research, public health protection, environmental
+                restoration, data input, and multiple coding languages
+                including: Python, Matlab, SQL, and C++.
+              </p>
+              <h3>Education</h3>
+              <ul>
+                <li>
+                  <strong>University of California, Berkeley</strong><br />
+                  Bachelor of Arts: Marine Science<br />
+                  Graduated: December 2016
+                  <br />
+                </li>
+                <li>
+                  <strong>Santa Rosa Junior College</strong><br />
+                  Associate in Arts: Mathematics<br />
+                  Graduated: May 2014
+                </li>
+              </ul>
 
-						<h3>Education</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3>Work Experience</h3>
+              <ul>
+                <li>
+                  Restoration Technician/Crew Leader Dec 2021-Present <br />
+                  Prunuske Chatham Inc, Sebastopol, CA<br />
+                  Rick Kaye: (707)527-2994
+                </li>
+                <li>
+                  Teller and Security Worker Feb 2017-Oct 2022
+                  <br />
+                  Petaluma Pumpkin Patch, Petaluma, CA<br />
+                  James Groverman: (707)481-7663
+                </li>
+                <li>
+                  Assistant Carpenter (40hrs/week) Nov 2018-Dec 2021<br />
+                  Rusty Mila Construction, Santa Rosa, CA<br />
+                  Rusty Mila: (707)326-0573
+                </li>
+                <li>
+                  Field Assistant March 2018-Oct 2018<br />
+                  Marin/Sonoma Mosquito & Vector Control District, Cotati, CA<br />
+                  Jason Sequeira: (707)285-2200
+                </li>
+                <li>
+                  Fisheries Technician I March 2017-Dec 2017<br />
+                  Pacific States Marine Fisheries Commission, Santa Rosa, CA<br />
+                  Barry Miller: (707)576-2860
+                </li>
+                <li>
+                  Ranch Manager/Assistant Aug 2011-June 2014<br />
+                  Groverman Shropshires, Petaluma, CA<br />
+                  Fred Groverman: Deceased
+                </li>
+                <li>
+                  Mathematics Tutor Aug 2013-May 2014<br />
+                  Mathematics Lab, Santa Rosa Junior College<br />
+                  Debra Miller: (707)524-1657
+                </li>
+              </ul>
 
-						<h3>Work Experience</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3>My Certifications</h3>
+              <ul>
+                <li>
+                  AWS Certified Developer - Associate<br />
+                  Issued from: Amazon Web Services<br />
+                  Issued: April 2023
+                  <a
+                    href="https://www.credly.com/badges/7993ea51-a673-45a7-9870-d53c0fe9b1ef/linked_in_profile"
+                    target="_blank"
+                    >(credential)</a
+                  >
+                </li>
+                <li>
+                  AWS Certified Cloud Practitioner<br />
+                  Issued from: Amazon Web Services<br />
+                  Issued: February 2023
+                  <a
+                    href="https://www.credly.com/badges/8181ed9d-99b5-4e34-917b-2fcb3a5158c7/linked_in_profile"
+                    target="_blank"
+                    >(credential)</a
+                  >
+                </li>
+                <li>
+                  Certificate of Completion - The Complete Python Bootcamp: From
+                  Zero to Hero in Python<br />
+                  Issued from: Udemy<br />
+                  Issued: January 2023
+                  <a
+                    href="https://www.udemy.com/certificate/UC-352baa43-ad44-49ea-a4b9-983597bde76f/"
+                    target="_blank"
+                    >(credential)</a
+                  >
+                </li>
+              </ul>
 
-						<h3>My Certifications</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3>Future Plans</h3>
+              <p>
+                My wife and I hope to raise our future family in the San
+                Francisco Bay Area. I aim to continue to build and expand my new
+                career of web and cloud development. This is while I will
+                continue to assist and donate my free-time to environmental
+                protection and restoration.
+              </p>
+            </div>
+            <div class="col-lg-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <img
+                src="images_and_ref/beach.jpg"
+                width="300"
+                height="388"
+                class="sup_img"
+              />
+            </div>
+            <div class="col-lg-4">
+              <img
+                src="images_and_ref/hawaii.jpg"
+                width="388"
+                height="300"
+                class="sup_img"
+              />
+            </div>
+            <div class="col-lg-4">
+              <img
+                src="images_and_ref/restoration.jpg"
+                width="300"
+                height="388"
+                class="sup_img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
-						<h3>Future Plans</h3>
-						<p>My wife and I hope to raise our future family in the San Francisco Bay Area. I aim to continue to build and expand my new career of web and cloud development. This is while I will continue to assist and donate my free-time to environmental protection and restoration.</p>
-					</div>
-					<div class="col-lg-3">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4">
-						<img src="images_and_ref/beach.jpg" width="300" height="388" class="sup_img">
-					</div>
-					<div class="col-lg-4">
-						<img src="images_and_ref/hawaii.jpg" width="388" height="300" class="sup_img">
-					</div>
-					<div class="col-lg-4">
-						<img src="images_and_ref/restoration.jpg" width="300" height="388" class="sup_img">
-					</div>
-				</div>
-			</div>
-		</div>
+      <div id="footer">
+        <hr />
+        <div class="navbar">
+          <a href="index.html" class="active">Home</a>
+          <a href="Portfolio.html">Portfolio</a>
+          <a href="Math.html">Math Art</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
 
-		<div id="footer">
-			<hr>
-			<div class="navbar">
-		  		<a href="index.html" class="active">Home</a>
-		  		<a href="Portfolio.html">Portfolio</a>
-		 		<a href="Math.html">Math Art</a>
-		 		<a href="contact.html">Contact</a>
-			</div>
-		</div>
-	</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
