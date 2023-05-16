@@ -10,6 +10,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-weight: 600;
 }
 
 ul {
@@ -64,11 +65,12 @@ div.sticky {
 hr {
   border: 2px solid black;
   opacity: 0.5;
+  margin-top: 25px;
 }
 
 /*footer design*/
 .navbar {
-  margin-top: 25px;
+  margin-top: 50px;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);

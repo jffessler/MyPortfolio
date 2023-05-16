@@ -1,6 +1,6 @@
 #title {
   text-align: center;
-  padding: 50px 0px 0px 0px;
+  padding: 65px 0px 0px 0px;
 }
 
 .body_text {
@@ -28,6 +28,10 @@ p {
 
 #resume_title {
   text-align: center;
+  background-color: #4d98b2;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding: 10px 0;
 }
 
 #action {
@@ -45,7 +49,7 @@ p {
   float: left;
   border: 8px solid #626f9d;
   box-shadow: 0 0 5px 2px rgba(0, 140, 186, 0.5);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .sup_img {
@@ -97,7 +101,26 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: blue; */
+}
+
+.summary {
+  background-color: #4d98b2;
+  border-radius: 25px;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.work {
+  background-color: #4d98b2;
+  border-radius: 50px;
+  margin: 10px 0;
+}
+
+.future {
+  background-color: #4d98b2;
+  border-radius: 25px;
+  margin: 10px 0;
+  padding: 0 10px;
 }
 
 .foot-img {
@@ -121,5 +144,24 @@ p {
   display: flex;
   flex-direction: column;
   align-items: left;
-  /* background-color: #4d98b2; */
+  text-align: left;
+  max-height: 600px;
+}
+
+.certification {
+  background-color: #4d98b2;
+  border-radius: 50px;
+  margin: 10px 0;
+}
+
+.education {
+  background-color: #4d98b2;
+  border-radius: 50px;
+  margin: 10px 0;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
