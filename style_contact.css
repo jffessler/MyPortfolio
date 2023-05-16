@@ -1,14 +1,24 @@
-.text{
-	text-align: center;
+html {
+  overflow: hidden;
 }
-#sub_title{
-	margin: 0px 0px 25px 0px
+
+.text {
+  text-align: center;
 }
-ul.my_list{
-	display: inline-block;
-	text-align: left;
+#sub_title {
+  margin: 0px 0px 25px 0px;
+}
+ul.my_list {
+  display: inline-block;
+  text-align: left;
+}
+
+.container {
+  margin-top: 15rem;
 }
 
 .center {
-	padding: 250px 0;
+  background-color: #4d98b2;
+  border-radius: 50px;
+  padding: 25px;
 }

@@ -1,12 +1,27 @@
-.text{
-	text-align: center;
+html {
+  overflow: hidden;
 }
 
-ul.my_list{
-	display: inline-block;
-	text-align: left;
+.text {
+  text-align: center;
+}
+
+.container {
+  margin-top: 15rem;
+}
+
+ul.my_list {
+  display: inline-block;
+  text-align: left;
 }
 
 .center {
-	padding: 250px 0;
+  background-color: #4d98b2;
+  border-radius: 50px;
+  padding: 25px;
+}
+
+#more-proj {
+  text-align: center;
+  margin-top: 25px;
 }

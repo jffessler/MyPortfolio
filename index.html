@@ -56,160 +56,176 @@
 
         <div class="body_text container">
           <div class="row main-body">
-            <div class="col-lg-3">
-              <img
-                id="headshot"
-                src="images_and_ref/headshot.jpeg"
-                width="300"
-                height="388"
-              />
-              <h3 id="resume_title"><strong>My Resumé</strong></h3>
-              <img
-                id="resume"
-                src="images_and_ref/resume.jpeg"
-                width="300"
-                height="388"
-              />
-
-              <div id="window" class="modal">
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <iframe
-                    src="images_and_ref/resume.pdf"
-                    width="100%"
-                    height="100%"
-                  ></iframe>
-                </div>
+            <div class="col-lg-3 left-side">
+              <div class="headshot-block">
+                <img
+                  id="headshot"
+                  src="images_and_ref/headshot.jpeg"
+                  width="300"
+                  height="388"
+                />
               </div>
-              <script>
-                var modal = document.getElementById("window");
-                var btn = document.getElementById("resume");
-                var span = document.getElementsByClassName("close")[0];
-                //open the modal
-                btn.onclick = function () {
-                  modal.style.display = "block";
-                };
-                //close the modal
-                span.onclick = function () {
-                  modal.style.display = "none";
-                };
-                // click outside closes window
-                window.onclick = function (event) {
-                  if (event.target == modal) {
+              <div class="resume-block">
+                <h3 id="resume_title"><strong>My Resumé</strong></h3>
+                <img
+                  id="resume"
+                  src="images_and_ref/resume.jpeg"
+                  width="300"
+                  height="388"
+                />
+
+                <div id="window" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe
+                      src="images_and_ref/resume.pdf"
+                      width="100%"
+                      height="100%"
+                    ></iframe>
+                  </div>
+                </div>
+                <script>
+                  var modal = document.getElementById("window");
+                  var btn = document.getElementById("resume");
+                  var span = document.getElementsByClassName("close")[0];
+                  //open the modal
+                  btn.onclick = function () {
+                    modal.style.display = "block";
+                  };
+                  //close the modal
+                  span.onclick = function () {
                     modal.style.display = "none";
-                  }
-                };
-              </script>
+                  };
+                  // click outside closes window
+                  window.onclick = function (event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  };
+                </script>
+              </div>
             </div>
             <div class="col-lg-6">
-              <h3>Professional Summary</h3>
-              <p>
-                I am a hard-working and multi-talented professional with strong
-                skills tied with natural sciences, computer science, and team
-                leadership. With years of work and educational experience honing
-                my abilities, I have input for: AWS cloud development, native
-                species research, public health protection, environmental
-                restoration, data input, and multiple coding languages
-                including: Python, Matlab, SQL, and C++.
-              </p>
-              <h3>Work Experience</h3>
-              <ul>
-                <li>
-                  Restoration Technician/Crew Leader Dec 2021-Present <br />
-                  Prunuske Chatham Inc, Sebastopol, CA<br />
-                  Rick Kaye: (707)527-2994
-                </li>
-                <li>
-                  Teller and Security Worker Feb 2017-Oct 2022
-                  <br />
-                  Petaluma Pumpkin Patch, Petaluma, CA<br />
-                  James Groverman: (707)481-7663
-                </li>
-                <li>
-                  Assistant Carpenter (40hrs/week) Nov 2018-Dec 2021<br />
-                  Rusty Mila Construction, Santa Rosa, CA<br />
-                  Rusty Mila: (707)326-0573
-                </li>
-                <li>
-                  Field Assistant March 2018-Oct 2018<br />
-                  Marin/Sonoma Mosquito & Vector Control District, Cotati, CA<br />
-                  Jason Sequeira: (707)285-2200
-                </li>
-                <li>
-                  Fisheries Technician I March 2017-Dec 2017<br />
-                  Pacific States Marine Fisheries Commission, Santa Rosa, CA<br />
-                  Barry Miller: (707)576-2860
-                </li>
-                <li>
-                  Ranch Manager/Assistant Aug 2011-June 2014<br />
-                  Groverman Shropshires, Petaluma, CA<br />
-                  Fred Groverman: Deceased
-                </li>
-                <li>
-                  Mathematics Tutor Aug 2013-May 2014<br />
-                  Mathematics Lab, Santa Rosa Junior College<br />
-                  Debra Miller: (707)524-1657
-                </li>
-              </ul>
-
-              <h3>Future Plans</h3>
-              <p>
-                My wife and I hope to raise our future family in the San
-                Francisco Bay Area. I aim to continue to build and expand my new
-                career of web and cloud development. This is while I will
-                continue to assist and donate my free-time to environmental
-                protection and restoration.
-              </p>
+              <div class="summary">
+                <h3>Professional Summary</h3>
+                <p>
+                  I am a hard-working and multi-talented professional with
+                  strong skills tied with natural sciences, computer science,
+                  and team leadership. With years of work and educational
+                  experience honing my abilities, I have input for: AWS cloud
+                  development, native species research, public health
+                  protection, environmental restoration, data input, and
+                  multiple coding languages including: Python, Matlab, SQL, and
+                  C++.
+                </p>
+              </div>
+              <div class="work">
+                <h3>Work Experience</h3>
+                <ul>
+                  <li>
+                    Restoration Technician/Crew Leader Dec 2021-Present <br />
+                    Prunuske Chatham Inc, Sebastopol, CA<br />
+                    Rick Kaye: (707)527-2994
+                  </li>
+                  <li>
+                    Teller and Security Worker Feb 2017-Oct 2022
+                    <br />
+                    Petaluma Pumpkin Patch, Petaluma, CA<br />
+                    James Groverman: (707)481-7663
+                  </li>
+                  <li>
+                    Assistant Carpenter (40hrs/week) Nov 2018-Dec 2021<br />
+                    Rusty Mila Construction, Santa Rosa, CA<br />
+                    Rusty Mila: (707)326-0573
+                  </li>
+                  <li>
+                    Field Assistant March 2018-Oct 2018<br />
+                    Marin/Sonoma Mosquito & Vector Control District, Cotati,
+                    CA<br />
+                    Jason Sequeira: (707)285-2200
+                  </li>
+                  <li>
+                    Fisheries Technician I March 2017-Dec 2017<br />
+                    Pacific States Marine Fisheries Commission, Santa Rosa,
+                    CA<br />
+                    Barry Miller: (707)576-2860
+                  </li>
+                  <li>
+                    Ranch Manager/Assistant Aug 2011-June 2014<br />
+                    Groverman Shropshires, Petaluma, CA<br />
+                    Fred Groverman: Deceased
+                  </li>
+                  <li>
+                    Mathematics Tutor Aug 2013-May 2014<br />
+                    Mathematics Lab, Santa Rosa Junior College<br />
+                    Debra Miller: (707)524-1657
+                  </li>
+                </ul>
+              </div>
+              <div class="future">
+                <h3>Future Plans</h3>
+                <p>
+                  My wife and I hope to raise our future family in the San
+                  Francisco Bay Area. I aim to continue to build and expand my
+                  new career of web and cloud development. This is while I will
+                  continue to assist and donate my free-time to environmental
+                  protection and restoration.
+                </p>
+              </div>
             </div>
             <div class="col-lg-3 right-side">
-              <h3>My Certifications</h3>
-              <ul>
-                <li>
-                  AWS Certified Developer - Associate<br />
-                  Issued from: Amazon Web Services<br />
-                  Issued: April 2023
-                  <a
-                    href="https://www.credly.com/badges/7993ea51-a673-45a7-9870-d53c0fe9b1ef/linked_in_profile"
-                    target="_blank"
-                    >(credential)</a
-                  >
-                </li>
-                <li>
-                  AWS Certified Cloud Practitioner<br />
-                  Issued from: Amazon Web Services<br />
-                  Issued: February 2023
-                  <a
-                    href="https://www.credly.com/badges/8181ed9d-99b5-4e34-917b-2fcb3a5158c7/linked_in_profile"
-                    target="_blank"
-                    >(credential)</a
-                  >
-                </li>
-                <li>
-                  Certificate of Completion - The Complete Python Bootcamp: From
-                  Zero to Hero in Python<br />
-                  Issued from: Udemy<br />
-                  Issued: January 2023
-                  <a
-                    href="https://www.udemy.com/certificate/UC-352baa43-ad44-49ea-a4b9-983597bde76f/"
-                    target="_blank"
-                    >(credential)</a
-                  >
-                </li>
-              </ul>
-              <h3>Education</h3>
-              <ul>
-                <li>
-                  <strong>University of California, Berkeley</strong><br />
-                  Bachelor of Arts: Marine Science<br />
-                  Graduated: December 2016
-                  <br />
-                </li>
-                <li>
-                  <strong>Santa Rosa Junior College</strong><br />
-                  Associate in Arts: Mathematics<br />
-                  Graduated: May 2014
-                </li>
-              </ul>
+              <div class="certification">
+                <h3>My Certifications</h3>
+                <ul>
+                  <li>
+                    AWS Certified Developer - Associate<br />
+                    Issued from: Amazon Web Services<br />
+                    Issued: April 2023
+                    <a
+                      href="https://www.credly.com/badges/7993ea51-a673-45a7-9870-d53c0fe9b1ef/linked_in_profile"
+                      target="_blank"
+                      >(credential)</a
+                    >
+                  </li>
+                  <li>
+                    AWS Certified Cloud Practitioner<br />
+                    Issued from: Amazon Web Services<br />
+                    Issued: February 2023
+                    <a
+                      href="https://www.credly.com/badges/8181ed9d-99b5-4e34-917b-2fcb3a5158c7/linked_in_profile"
+                      target="_blank"
+                      >(credential)</a
+                    >
+                  </li>
+                  <li>
+                    Certificate of Completion - The Complete Python Bootcamp:
+                    From Zero to Hero in Python<br />
+                    Issued from: Udemy<br />
+                    Issued: January 2023
+                    <a
+                      href="https://www.udemy.com/certificate/UC-352baa43-ad44-49ea-a4b9-983597bde76f/"
+                      target="_blank"
+                      >(credential)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="education">
+                <h3>Education</h3>
+                <ul>
+                  <li>
+                    <strong>University of California, Berkeley</strong><br />
+                    Bachelor of Arts: Marine Science<br />
+                    Graduated: December 2016
+                    <br />
+                  </li>
+                  <li>
+                    <strong>Santa Rosa Junior College</strong><br />
+                    Associate in Arts: Mathematics<br />
+                    Graduated: May 2014
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="row img-foot">
