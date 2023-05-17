@@ -94,3 +94,15 @@ hr {
   background-color: #ddd;
   color: black;
 }
+
+.links:link,
+.links:visited {
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links:hover,
+.links:active {
+  color: #b2674d;
+}

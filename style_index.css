@@ -23,7 +23,7 @@ p {
 
 #resume {
   margin-top: 20px;
-  box-shadow: 0 0 5px 2px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 5px 2px #4d98b2;
 }
 
 #resume_title {
@@ -41,20 +41,21 @@ p {
 #resume:hover {
   transition: 0.3s;
   transform: scale(1.1);
-  box-shadow: 0 0 5px 2px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 5px 2px #4d98b2;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #headshot {
   float: left;
   border: 8px solid #626f9d;
-  box-shadow: 0 0 5px 2px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 5px 2px #4d98b2;
   margin-bottom: 20px;
 }
 
 .sup_img {
   border: 8px solid #626f9d;
-  box-shadow: 0 0 5px 2px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 5px 2px #4d98b2;
   margin-bottom: 10px;
 }
 
