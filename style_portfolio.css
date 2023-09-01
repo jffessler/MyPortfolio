@@ -7,7 +7,7 @@ html {
 }
 
 .container {
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 ul.my_list {
@@ -24,4 +24,10 @@ ul.my_list {
 #more-proj {
   text-align: center;
   margin-top: 25px;
+}
+
+/* scroll bar */
+
+body {
+  overflow:auto;
 }
