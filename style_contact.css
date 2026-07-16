@@ -1,24 +1,76 @@
-html {
-  overflow: hidden;
+.page-contact {
+  gap: 1.5rem;
 }
 
-.text {
-  text-align: center;
-}
-#sub_title {
-  margin: 0px 0px 25px 0px;
-}
-ul.my_list {
-  display: inline-block;
-  text-align: left;
+.contact-hero {
+  display: grid;
+  gap: 1rem;
 }
 
-.container {
-  margin-top: 15rem;
+.contact-hero h1 {
+  font-size: clamp(2.5rem, 4vw, 4.2rem);
+  max-width: 12ch;
 }
 
-.center {
-  background-color: #4d98b2;
-  border-radius: 50px;
-  padding: 25px;
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.contact-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.profile-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.profile-link span {
+  color: var(--muted);
+}
+
+.profile-link strong {
+  font-size: 1rem;
+}
+
+.profile-link:hover,
+.profile-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(126, 216, 194, 0.35);
+  background: rgba(126, 216, 194, 0.07);
+}
+
+@media (max-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero h1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .profile-link {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

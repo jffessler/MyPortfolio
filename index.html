@@ -1,307 +1,311 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
+    <meta
+      name="description"
+      content="Portfolio of John Fessler, a data scientist and full-stack engineer focused on analytics, cloud development, and practical problem solving."
     />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
-    />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
     />
-    <link rel="stylesheet" type="text/css" href="style_all.css" />
-    <link rel="stylesheet" type="text/css" href="style_index.css" />
-
+    <link rel="stylesheet" href="style_all.css" />
+    <link rel="stylesheet" href="style_index.css" />
     <title>John Fessler</title>
   </head>
-
   <body>
-    <div id="page-container">
-      <div id="content-wrap">
-        <div class="sticky">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Portfolio.html">Portfolio</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="Math.html">Math Art</a>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="displayProject.html">Display Project</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <div class="site-shell">
+      <header class="topbar fade-in">
+        <a class="brand" href="index.html">John Fessler</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a class="nav-link active" aria-current="page" href="index.html"
+            >Home</a
+          >
+          <a class="nav-link" href="Portfolio.html">Projects</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </header>
 
-        <div id="title">
-          <h1><strong>John Fessler</strong></h1>
-          <h2><strong>Data Scientist and Full-Stack Engineer</strong></h2>
-          <br />
-        </div>
+      <main class="page page-home">
+        <section class="hero card fade-in delay-1">
+          <div class="hero-copy">
+            <p class="eyebrow">Mountain View, CA</p>
+            <h1>Building AI, analytics, and product systems</h1>
+            <p class="lead">
+              I combine analytics, software engineering, and real-world field
+              experience to turn complex problems into clear, dependable
+              solutions.
+            </p>
+          </div>
 
-        <div class="body_text container">
-          <div class="row main-body">
-            <div class="col-lg-3 left-side">
-              <div class="headshot-block">
-                <img
-                  id="headshot"
-                  src="images_and_ref/headshot.jpeg"
-                  width="300"
-                  height="388"
-                />
+          <aside class="hero-side">
+            <div class="hero-stack">
+              <div class="skills-card mini-card">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                  <li>
+                    <strong>Languages:</strong> Python, SQL, JavaScript,
+                    HTML/CSS
+                  </li>
+                  <li>
+                    <strong>Tools &amp; Platforms:</strong> Pandas, NumPy,
+                    Scikit-learn, Matplotlib, Plotly, Dash, Git, Linux, React,
+                    Next.js, AWS, Firebase, Supabase
+                  </li>
+                  <li>
+                    <strong>Data &amp; Analytics:</strong> Data Cleaning,
+                    Exploratory Data Analysis (EDA), Statistical Analysis, Data
+                    Annotation, QA Processes, Model Validation, Workflow
+                    Analytics
+                  </li>
+                </ul>
               </div>
-              <div class="resume-block">
-                <h3 id="resume_title"><strong>My Resumé</strong></h3>
-                <img
-                  id="resume"
-                  src="images_and_ref/resume.jpg"
-                  width="300"
-                  height="388"
-                />
-
-                <div id="window" class="modal">
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <iframe
-                      src="images_and_ref/resume.pdf"
-                      width="100%"
-                      height="100%"
-                    ></iframe>
-                  </div>
+              <div class="mini-card resume-card">
+                <p class="section-kicker">Resume</p>
+                <h2>Current resume</h2>
+                <p>
+                  View my latest resume for current experience, certifications,
+                  and recent project work.
+                </p>
+                <div class="resume-actions">
+                  <a
+                    class="button-link ghost"
+                    href="images_and_ref/resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Open Resume</a
+                  >
+                  <a
+                    class="button-link secondary"
+                    href="images_and_ref/resume-preview.png"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Preview Resume</a
+                  >
                 </div>
-                <script>
-                  var modal = document.getElementById("window");
-                  var btn = document.getElementById("resume");
-                  var span = document.getElementsByClassName("close")[0];
-                  //open the modal
-                  btn.onclick = function () {
-                    modal.style.display = "block";
-                  };
-                  //close the modal
-                  span.onclick = function () {
-                    modal.style.display = "none";
-                  };
-                  // click outside closes window
-                  window.onclick = function (event) {
-                    if (event.target == modal) {
-                      modal.style.display = "none";
-                    }
-                  };
-                </script>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="summary">
-                <h3>Professional Summary</h3>
-                <p>
-                  I am a multi-talented professional with a diverse background
-                  in data science, natural sciences, computer science, and team
-                  leadership. Transitioning into Data Science with hands-on
-                  experience in AWS, IBM Cloud, and conservation science.
-                  Proficient in Python, SQL, and JavaScript, recently receiving
-                  the Google Advanced Data Analytics and IBM Data Science
-                  Professional Certificate. A Certified AWS Developer with a
-                  strong foundation in full stack development, serverless cloud
-                  deployments, and CI/CD pipelines, coupled with a passion for
-                  data-driven solutions.
-                </p>
-              </div>
-              <div class="work">
-                <h3>Work Experience</h3>
-                <ul>
-                  <li>
-                    Restoration Technician/Crew Leader Dec 2021-May 2024 <br />
-                    Prunuske Chatham Inc, Sebastopol, CA<br />
-                    Rick Kaye: (707)527-2994
-                  </li>
-                  <li>
-                    Teller and Security Worker Feb 2017-Oct 2022
-                    <br />
-                    Petaluma Pumpkin Patch, Petaluma, CA<br />
-                    James Groverman: (707)481-7663
-                  </li>
-                  <li>
-                    Assistant Carpenter Nov 2018-Dec 2021<br />
-                    Rusty Mila Construction, Santa Rosa, CA<br />
-                    Rusty Mila: (707)326-0573
-                  </li>
-                  <li>
-                    Field Assistant March 2018-Oct 2018<br />
-                    Marin/Sonoma Mosquito & Vector Control District, Cotati,
-                    CA<br />
-                    Jason Sequeira: (707)285-2200
-                  </li>
-                  <li>
-                    Fisheries Technician I March 2017-Dec 2017<br />
-                    Pacific States Marine Fisheries Commission, Santa Rosa,
-                    CA<br />
-                    Barry Miller: (707)576-2860
-                  </li>
-                  <li>
-                    Ranch Manager/Assistant Aug 2011-June 2014<br />
-                    Groverman Shropshires, Petaluma, CA<br />
-                    Fred Groverman: Deceased
-                  </li>
-                  <li>
-                    Mathematics Tutor Aug 2013-May 2014<br />
-                    Mathematics Lab, Santa Rosa Junior College<br />
-                  </li>
-                </ul>
-              </div>
-              <div class="future">
-                <h3>Future Plans</h3>
-                <p>
-                  My wife and I hope to raise our future family in the San
-                  Francisco Bay Area. I aim to continue to build and expand my
-                  new career of data analytics. This is while I will continue to
-                  assist and donate my free-time to environmental protection and
-                  restoration.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 right-side">
-              <div class="certification">
-                <h3>My Certifications</h3>
-                <ul>
-                  <li>
-                    Google Advanced Data Analytics Certificate<br />
-                    Issued from: Google<br />
-                    Issued: November 2024
-                    <a
-                      class="links"
-                      href="https://coursera.org/share/9e46da18b8f9f8938fd002e9246892a3"
-                      target="_blank"
-                      >(credential)</a
-                    >
-                  </li>
-                  <li>
-                    IBM Data Science Professional Certificate<br />
-                    Issued from: IBM<br />
-                    Issued: August 2024
-                    <a
-                      class="links"
-                      href="https://coursera.org/share/973289793b7e591749477f7ceb1409bb"
-                      target="_blank"
-                      >(credential)</a
-                    >
-                  </li>
-                  <li>
-                    AWS Certified Developer - Associate<br />
-                    Issued from: Amazon Web Services<br />
-                    Issued: April 2023
-                    <a
-                      class="links"
-                      href="https://www.credly.com/badges/7993ea51-a673-45a7-9870-d53c0fe9b1ef/linked_in_profile"
-                      target="_blank"
-                      >(credential)</a
-                    >
-                  </li>
-                  <li>
-                    AWS Certified Cloud Practitioner<br />
-                    Issued from: Amazon Web Services<br />
-                    Issued: February 2023
-                    <a
-                      class="links"
-                      href="https://www.credly.com/badges/8181ed9d-99b5-4e34-917b-2fcb3a5158c7/linked_in_profile"
-                      target="_blank"
-                      >(credential)</a
-                    >
-                  </li>
-                  <li>
-                    Certificate of Completion - The Complete Python Bootcamp:
-                    From Zero to Hero in Python<br />
-                    Issued from: Udemy<br />
-                    Issued: January 2023
-                    <a
-                      class="links"
-                      href="https://www.udemy.com/certificate/UC-352baa43-ad44-49ea-a4b9-983597bde76f/"
-                      target="_blank"
-                      >(credential)</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="education">
-                <h3>Education</h3>
-                <ul>
-                  <li>
-                    <strong>University of California, Berkeley</strong><br />
-                    Bachelor of Arts: Marine Science<br />
-                    Graduated: December 2016
-                    <br />
-                  </li>
-                  <li>
-                    <strong>Santa Rosa Junior College</strong><br />
-                    Associate in Arts: Mathematics<br />
-                    Graduated: May 2014
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row img-foot">
-            <!-- <div class="col-lg-4"> -->
-            <div class="foot-img">
+            <div class="portrait-card">
               <img
-                src="images_and_ref/beach.jpg"
-                width="300"
-                height="388"
-                class="sup_img"
+                src="images_and_ref/profile-photo-2024.jpeg"
+                alt="Portrait of John Fessler"
               />
             </div>
-            <!-- <div class="foot-img">
-              <img
-                src="images_and_ref/hawaii.jpg"
-                width="388"
-                height="300"
-                class="sup_img"
-              />
-            </div> -->
-            <div class="foot-img">
-              <img
-                src="images_and_ref/restoration.jpg"
-                width="300"
-                height="388"
-                class="sup_img"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+          </aside>
+        </section>
 
-      <div id="footer">
-        <hr />
-        <div class="navbar">
-          <a href="index.html" class="active">Home</a>
-          <a href="Portfolio.html">Portfolio</a>
-          <!-- <a href="Math.html">Math Art</a> -->
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
+        <section class="content-grid fade-in delay-2">
+          <section class="card content-card summary-card">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">Overview</p>
+                <h2>Summary</h2>
+              </div>
+            </div>
+            <p>
+              I support AI and analytics work across data sourcing, labeling,
+              quality assurance, workflow analytics, and application
+              development. My background combines hands-on technical work in
+              Python, SQL, JavaScript, machine learning, and data visualization
+              with practical execution in fast-moving teams.
+            </p>
+            <p>
+              Recent work has focused on AI/ML operations, model-development
+              support, and full-stack problem solving, with experience across
+              annotation systems, QA processes, workflow improvement, and
+              user-facing product builds.
+            </p>
+          </section>
+
+          <section class="card content-card experience-card">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">Career</p>
+                <h2>Experience</h2>
+              </div>
+            </div>
+            <div class="timeline">
+              <article class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div>
+                  <h3>Stealth Startup</h3>
+                  <p class="meta">May 2026 - Present</p>
+                  <p>
+                    Building a new stealth company with ongoing product, data,
+                    and engineering development focused on turning early ideas
+                    into a real operating business.
+                  </p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div>
+                  <h3>Data Specialist / Junior QA</h3>
+                  <p class="meta">Structify | Feb 2025 - Apr 2026</p>
+                  <p>
+                    Supported AI and LLM training workflows through data
+                    labeling, sourcing, QA review, workflow analytics, and
+                    feedback loops that improved annotation quality and model
+                    readiness.
+                  </p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div>
+                  <h3>Restoration Technician / Crew Leader</h3>
+                  <p class="meta">
+                    Prunuske Chatham Inc. | Dec 2021 - May 2024
+                  </p>
+                  <p>
+                    Led field crews and supported environmental restoration work
+                    with consistency, accountability, and strong team
+                    communication.
+                  </p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div>
+                  <h3>Assistant Carpenter</h3>
+                  <p class="meta">
+                    Rusty Mila Construction | Nov 2018 - Dec 2021
+                  </p>
+                  <p>
+                    Supported residential construction projects with precision,
+                    adaptability, and close collaboration.
+                  </p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div>
+                  <h3>Field Assistant</h3>
+                  <p class="meta">
+                    Marin/Sonoma Mosquito &amp; Vector Control District | Mar
+                    2018 - Oct 2018
+                  </p>
+                  <p>
+                    Collected field data and contributed to public health work
+                    requiring careful observation and dependable execution.
+                  </p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div>
+                  <h3>Fisheries Technician I</h3>
+                  <p class="meta">
+                    Pacific States Marine Fisheries Commission | Mar 2017 - Dec
+                    2017
+                  </p>
+                  <p>
+                    Worked in environmental monitoring and data-driven field
+                    operations tied to fisheries management.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="card content-card certificates-card">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">Credentials</p>
+                <h2>Certificates</h2>
+              </div>
+            </div>
+            <div class="info-grid certifications-grid">
+              <article class="mini-card">
+                <h3>Google Advanced Data Analytics Certificate</h3>
+                <p class="meta">Google | Issued November 2024</p>
+                <a
+                  class="links"
+                  href="https://coursera.org/share/9e46da18b8f9f8938fd002e9246892a3"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View credential</a
+                >
+              </article>
+              <article class="mini-card">
+                <h3>IBM Data Science Professional Certificate</h3>
+                <p class="meta">IBM | Issued August 2024</p>
+                <a
+                  class="links"
+                  href="https://coursera.org/share/973289793b7e591749477f7ceb1409bb"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View credential</a
+                >
+              </article>
+              <article class="mini-card">
+                <h3>AWS Certified Developer - Associate</h3>
+                <p class="meta">
+                  Amazon Web Services | Issued April 2023 | Currently expired
+                </p>
+                <a
+                  class="links"
+                  href="https://www.credly.com/badges/7993ea51-a673-45a7-9870-d53c0fe9b1ef/linked_in_profile"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View credential</a
+                >
+              </article>
+              <article class="mini-card">
+                <h3>The Complete Python Bootcamp</h3>
+                <p class="meta">Udemy | Issued January 2023</p>
+                <a
+                  class="links"
+                  href="https://www.udemy.com/certificate/UC-352baa43-ad44-49ea-a4b9-983597bde76f/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View credential</a
+                >
+              </article>
+            </div>
+          </section>
+
+          <section class="card content-card education-card">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">Education</p>
+                <h2>Education</h2>
+              </div>
+            </div>
+            <div class="info-grid">
+              <article class="mini-card">
+                <h3>University of California, Berkeley</h3>
+                <p>Bachelor of Arts in Marine Science</p>
+                <p class="meta">Graduated: December 2016</p>
+              </article>
+              <article class="mini-card">
+                <h3>Santa Rosa Junior College</h3>
+                <p>Associate in Arts in Mathematics</p>
+                <p class="meta">Graduated: May 2014</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="card content-card next-card">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">Looking Ahead</p>
+                <h2>What's next</h2>
+              </div>
+            </div>
+            <p>
+              I want to keep building at the intersection of analytics,
+              software, and AI systems, with a stronger focus on creating and
+              growing a new stealth company into something durable, useful, and
+              ambitious.
+            </p>
+          </section>
+        </section>
+      </main>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
