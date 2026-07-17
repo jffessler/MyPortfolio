@@ -1,0 +1,9 @@
+{
+  "name": "john-fessler-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static portfolio website for John Fessler.",
+  "engines": {
+    "node": ">=22"
+  }
+}
