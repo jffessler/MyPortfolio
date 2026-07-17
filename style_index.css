@@ -3,6 +3,7 @@
 }
 
 .hero {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.75rem;
@@ -23,11 +24,6 @@
 .lead {
   font-size: 1.12rem;
   max-width: 68ch;
-}
-
-.hero-stack {
-  display: grid;
-  gap: 1rem;
 }
 
 .skills-card h2 {
@@ -66,6 +62,18 @@
   grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
   gap: 1.25rem;
   align-items: start;
+}
+
+.hero-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
 }
 
 .portrait-card {
@@ -185,6 +193,12 @@
     margin-top: 0;
     justify-self: start;
     max-width: 320px;
+  }
+
+  .hero-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .experience-card,

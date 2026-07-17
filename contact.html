@@ -13,8 +13,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
     />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="style_all.css" />
     <link rel="stylesheet" href="style_contact.css" />
+    <script src="site.js" defer></script>
     <title>Contact | John Fessler</title>
   </head>
   <body>
@@ -31,17 +33,24 @@
       </header>
 
       <main class="page page-contact">
-        <section class="contact-hero card fade-in delay-1">
+        <section class="contact-hero card fade-in delay-1" data-reveal>
           <p class="eyebrow">Contact</p>
           <h1>Get in touch</h1>
           <p class="lead">
             I'm open to conversations about analytics roles, software
             projects, and product work.
           </p>
+          <div class="freshness-strip">
+            <span class="freshness-label">Current Focus</span>
+            <p class="freshness-copy">
+              AI data operations, stealth startup building, and practical
+              full-stack problem solving.
+            </p>
+          </div>
         </section>
 
         <section class="contact-grid fade-in delay-2">
-          <article class="contact-card card">
+          <article class="contact-card card" data-reveal>
             <p class="section-kicker">Email</p>
             <h2>Email me</h2>
             <p>
@@ -53,7 +62,7 @@
             >
           </article>
 
-          <article class="contact-card card">
+          <article class="contact-card card" data-reveal data-reveal-delay="120ms">
             <p class="section-kicker">Professional Profiles</p>
             <h2>Profiles</h2>
             <div class="profile-list">

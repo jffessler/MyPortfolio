@@ -3,6 +3,7 @@
 }
 
 .portfolio-hero {
+  position: relative;
   display: grid;
   gap: 0.6rem;
   max-width: 760px;
@@ -45,6 +46,8 @@
 }
 
 .project-card {
+  position: relative;
+  overflow: hidden;
   display: grid;
   gap: 0.85rem;
   padding: 1.35rem;
@@ -53,6 +56,18 @@
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
     rgba(255, 255, 255, 0.02);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(135deg, rgba(126, 216, 194, 0.12), transparent 32%),
+    linear-gradient(315deg, rgba(242, 179, 93, 0.08), transparent 28%);
+  opacity: 0.8;
+  pointer-events: none;
 }
 
 .project-card.featured {

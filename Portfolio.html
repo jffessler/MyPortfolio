@@ -13,8 +13,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
     />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="style_all.css" />
     <link rel="stylesheet" href="style_portfolio.css" />
+    <script src="site.js" defer></script>
     <title>Projects | John Fessler</title>
   </head>
   <body>
@@ -31,18 +33,31 @@
       </header>
 
       <main class="page page-portfolio">
-        <section class="portfolio-hero card fade-in delay-1">
+        <section class="portfolio-hero card fade-in delay-1" data-reveal>
           <div class="portfolio-hero-copy">
             <p class="eyebrow">Projects</p>
             <h1>Selected Projects</h1>
           </div>
-          <!-- <p class="lead">
-            A focused sample of analytics work, deployed web applications, and
-            Python projects.
-          </p> -->
+          <div class="freshness-strip">
+            <span class="freshness-label">Updated July 2026</span>
+            <p class="freshness-copy">
+              Recent focus: AI data operations, model workflows, and
+              full-stack product building.
+            </p>
+          </div>
         </section>
 
-        <section class="portfolio-section card fade-in delay-2">
+        <button
+          class="scroll-cue"
+          type="button"
+          aria-label="Scroll down for more projects"
+          data-scroll-cue
+        >
+          <span class="scroll-cue-text">More below</span>
+          <span class="scroll-cue-arrow" aria-hidden="true"></span>
+        </button>
+
+        <section class="portfolio-section card fade-in delay-2" data-reveal>
           <div class="section-heading">
             <div>
               <p class="section-kicker">Data Science</p>
@@ -112,7 +127,7 @@
           </div>
         </section>
 
-        <section class="portfolio-section card">
+        <section class="portfolio-section card" data-reveal>
           <div class="section-heading">
             <div>
               <p class="section-kicker">Web Applications</p>
@@ -160,7 +175,7 @@
           </div>
         </section>
 
-        <section class="portfolio-section card">
+        <section class="portfolio-section card" data-reveal>
           <div class="section-heading">
             <div>
               <p class="section-kicker">Python Applications</p>
@@ -252,6 +267,26 @@
                 >View project</a
               >
             </article>
+          </div>
+        </section>
+
+        <section class="card contact-cta" data-reveal>
+          <div class="contact-cta-inner">
+            <div class="contact-cta-copy">
+              <p class="section-kicker">Next Conversation</p>
+              <h2>
+                If a project here lines up with what you&apos;re building,
+                I&apos;d love to talk.
+              </h2>
+              <p class="lead">
+                I&apos;m especially interested in AI, analytics, and early-stage
+                product work where strong execution really matters.
+              </p>
+            </div>
+            <div class="contact-cta-actions">
+              <a class="button-link primary" href="contact.html">Start a Conversation</a>
+              <a class="button-link secondary" href="index.html">View Homepage</a>
+            </div>
           </div>
         </section>
       </main>

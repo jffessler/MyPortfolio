@@ -13,8 +13,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
     />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="style_all.css" />
     <link rel="stylesheet" href="style_index.css" />
+    <script src="site.js" defer></script>
     <title>John Fessler</title>
   </head>
   <body>
@@ -32,17 +34,25 @@
 
       <main class="page page-home">
         <section class="hero card fade-in delay-1">
-          <div class="hero-copy">
-            <p class="eyebrow">Mountain View, CA</p>
-            <h1>Building AI, analytics, and product systems</h1>
+          <div class="hero-copy" data-reveal>
+            <div class="hero-meta">
+              <p class="eyebrow">Mountain View, CA</p>
+            </div>
+            <h1>Building Something New</h1>
             <p class="lead">
               I combine analytics, software engineering, and real-world field
               experience to turn complex problems into clear, dependable
               solutions.
             </p>
+            <div class="freshness-strip">
+              <span class="freshness-label">Updated July 2026</span>
+              <p class="freshness-copy">
+                Recent focus: AI data operations and stealth startup work.
+              </p>
+            </div>
           </div>
 
-          <aside class="hero-side">
+          <aside class="hero-side" data-reveal data-reveal-delay="120ms">
             <div class="hero-stack">
               <div class="skills-card mini-card">
                 <h2>Skills</h2>
@@ -89,7 +99,7 @@
                 </div>
               </div>
             </div>
-            <div class="portrait-card">
+            <div class="portrait-card" data-parallax>
               <img
                 src="images_and_ref/profile-photo-2024.jpeg"
                 alt="Portrait of John Fessler"
@@ -98,8 +108,18 @@
           </aside>
         </section>
 
-        <section class="content-grid fade-in delay-2">
-          <section class="card content-card summary-card">
+        <button
+          class="scroll-cue"
+          type="button"
+          aria-label="Scroll down for more information"
+          data-scroll-cue
+        >
+          <span class="scroll-cue-text">More below</span>
+          <span class="scroll-cue-arrow" aria-hidden="true"></span>
+        </button>
+
+        <section class="content-grid">
+          <section class="card content-card summary-card" data-reveal>
             <div class="section-heading">
               <div>
                 <p class="section-kicker">Overview</p>
@@ -121,7 +141,7 @@
             </p>
           </section>
 
-          <section class="card content-card experience-card">
+          <section class="card content-card experience-card" data-reveal>
             <div class="section-heading">
               <div>
                 <p class="section-kicker">Career</p>
@@ -212,7 +232,7 @@
             </div>
           </section>
 
-          <section class="card content-card certificates-card">
+          <section class="card content-card certificates-card" data-reveal>
             <div class="section-heading">
               <div>
                 <p class="section-kicker">Credentials</p>
@@ -269,7 +289,7 @@
             </div>
           </section>
 
-          <section class="card content-card education-card">
+          <section class="card content-card education-card" data-reveal>
             <div class="section-heading">
               <div>
                 <p class="section-kicker">Education</p>
@@ -290,7 +310,7 @@
             </div>
           </section>
 
-          <section class="card content-card next-card">
+          <section class="card content-card next-card" data-reveal>
             <div class="section-heading">
               <div>
                 <p class="section-kicker">Looking Ahead</p>
@@ -304,6 +324,29 @@
               ambitious.
             </p>
           </section>
+        </section>
+
+        <section class="card contact-cta" data-reveal>
+          <div class="contact-cta-inner">
+            <div class="contact-cta-copy">
+              <p class="section-kicker">Let's Talk</p>
+              <h2>
+                Interested in AI, analytics, or early-stage product work?
+                Let&apos;s talk.
+              </h2>
+              <p class="lead">
+                I&apos;m especially interested in thoughtful teams, ambitious
+                product ideas, and opportunities where data, engineering, and
+                execution all matter.
+              </p>
+            </div>
+            <div class="contact-cta-actions">
+              <a class="button-link primary" href="contact.html">Contact Me</a>
+              <a class="button-link secondary" href="mailto:jffessler@gmail.com"
+                >Email Directly</a
+              >
+            </div>
+          </div>
         </section>
       </main>
     </div>
